@@ -1,2 +1,6 @@
 /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/ShopwaveStarterApplication.java
+/data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/model/Category.java
+/data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/model/Order.java
+/data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/model/OrderItem.java
+/data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/model/Product.java
 /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/model/Status.java
