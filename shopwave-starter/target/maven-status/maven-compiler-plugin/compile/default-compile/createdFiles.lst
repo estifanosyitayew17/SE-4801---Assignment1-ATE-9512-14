@@ -1,10 +1,13 @@
-com/shopwave/model/OrderItem$OrderItemBuilder.class
-com/shopwave/model/Order.class
 com/shopwave/model/Product.class
 com/shopwave/model/Status.class
 com/shopwave/model/Order$OrderBuilder.class
-com/shopwave/model/OrderItem.class
 com/shopwave/model/Category$CategoryBuilder.class
 com/shopwave/model/Category.class
 com/shopwave/model/Product$ProductBuilder.class
+com/shopwave/repository/ProductRepository.class
 com/shopwave/ShopwaveStarterApplication.class
+com/shopwave/exception/ProductNotFoundException.class
+com/shopwave/model/OrderItem$OrderItemBuilder.class
+com/shopwave/model/Order.class
+com/shopwave/model/OrderItem.class
+com/shopwave/repository/CategoryRepository.class
