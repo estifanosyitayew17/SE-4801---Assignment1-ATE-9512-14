@@ -15,3 +15,4 @@ com/shopwave/model/OrderItem$OrderItemBuilder.class
 com/shopwave/model/Order.class
 com/shopwave/model/OrderItem.class
 com/shopwave/repository/CategoryRepository.class
+com/shopwave/service/ProductService.class

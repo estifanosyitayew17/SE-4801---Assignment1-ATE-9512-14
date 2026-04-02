@@ -10,3 +10,4 @@
 /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/model/Status.java
 /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/repository/CategoryRepository.java
 /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/repository/ProductRepository.java
+/data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/service/ProductService.java
