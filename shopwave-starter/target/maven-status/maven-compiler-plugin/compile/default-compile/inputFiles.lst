@@ -1,5 +1,8 @@
 /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/ShopwaveStarterApplication.java
+/data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/dto/CreateProductRequest.java
+/data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/dto/ProductDTO.java
 /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/exception/ProductNotFoundException.java
+/data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/mapper/ProductMapper.java
 /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/model/Category.java
 /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/model/Order.java
 /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/main/java/com/shopwave/model/OrderItem.java
