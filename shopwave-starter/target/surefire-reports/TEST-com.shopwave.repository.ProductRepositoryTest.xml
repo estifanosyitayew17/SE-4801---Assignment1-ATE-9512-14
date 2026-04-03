@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shopwave.ShopwaveStarterApplicationTests" time="6.947" tests="1" errors="0" skipped="0" failures="0" flakes="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shopwave.repository.ProductRepositoryTest" time="13.412" tests="3" errors="0" skipped="0" failures="0" flakes="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -44,7 +44,6 @@
     <property name="localRepository" value="/data/data/com.termux/files/home/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/data/data/com.termux/files/usr/tmp/"/>
-    <property name="com.zaxxer.hikari.pool_number" value="1"/>
     <property name="java.version" value="21.0.10"/>
     <property name="user.dir" value="/data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter"/>
     <property name="os.arch" value="aarch64"/>
@@ -61,9 +60,9 @@
     <property name="java.class.version" value="65.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[shopwave-starter] "/>
   </properties>
-  <testcase name="contextLoads" classname="com.shopwave.ShopwaveStarterApplicationTests" time="0.019">
-    <system-out><![CDATA[2026-04-03T04:35:26.928Z  INFO 31200 --- [shopwave-starter] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.shopwave.ShopwaveStarterApplicationTests]: ShopwaveStarterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-04-03T04:35:26.971Z  INFO 31200 --- [shopwave-starter] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.shopwave.ShopwaveStarterApplication for test class com.shopwave.ShopwaveStarterApplicationTests
+  <testcase name="testFindTopByOrderByPriceDesc" classname="com.shopwave.repository.ProductRepositoryTest" time="2.104">
+    <system-out><![CDATA[04:35:06.968 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.shopwave.repository.ProductRepositoryTest]: ProductRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+04:35:07.420 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.shopwave.ShopwaveStarterApplication for test class com.shopwave.repository.ProductRepositoryTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -74,35 +73,59 @@
 
  :: Spring Boot ::               (v3.5.13)
 
-2026-04-03T04:35:27.124Z  INFO 31200 --- [shopwave-starter] [           main] c.s.ShopwaveStarterApplicationTests      : Starting ShopwaveStarterApplicationTests using Java 21.0.10 with PID 31200 (started by u0_a383 in /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter)
-2026-04-03T04:35:27.125Z  INFO 31200 --- [shopwave-starter] [           main] c.s.ShopwaveStarterApplicationTests      : No active profile set, falling back to 1 default profile: "default"
-2026-04-03T04:35:29.085Z  INFO 31200 --- [shopwave-starter] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-04-03T04:35:29.160Z  INFO 31200 --- [shopwave-starter] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
-2026-04-03T04:35:29.841Z  INFO 31200 --- [shopwave-starter] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-04-03T04:35:29.883Z  INFO 31200 --- [shopwave-starter] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn8: url=jdbc:h2:mem:e6f4bb19-445d-4e13-8dee-c5239ba0fcf0 user=SA
-2026-04-03T04:35:29.889Z  INFO 31200 --- [shopwave-starter] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-04-03T04:35:29.917Z  INFO 31200 --- [shopwave-starter] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-04-03T04:35:29.926Z  INFO 31200 --- [shopwave-starter] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-04-03T04:35:29.951Z  INFO 31200 --- [shopwave-starter] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-04-03T04:35:29.958Z  INFO 31200 --- [shopwave-starter] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+2026-04-03T04:35:08.930Z  INFO 31200 --- [shopwave-starter] [           main] c.s.repository.ProductRepositoryTest     : Starting ProductRepositoryTest using Java 21.0.10 with PID 31200 (started by u0_a383 in /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter)
+2026-04-03T04:35:08.935Z  INFO 31200 --- [shopwave-starter] [           main] c.s.repository.ProductRepositoryTest     : No active profile set, falling back to 1 default profile: "default"
+2026-04-03T04:35:10.466Z  INFO 31200 --- [shopwave-starter] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-03T04:35:10.667Z  INFO 31200 --- [shopwave-starter] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 158 ms. Found 2 JPA repository interfaces.
+2026-04-03T04:35:10.865Z  INFO 31200 --- [shopwave-starter] [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-04-03T04:35:11.165Z  INFO 31200 --- [shopwave-starter] [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:f19749f4-b441-4a39-b788-174da1c50b3c;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-04-03T04:35:12.030Z  INFO 31200 --- [shopwave-starter] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-03T04:35:12.198Z  INFO 31200 --- [shopwave-starter] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-04-03T04:35:12.306Z  INFO 31200 --- [shopwave-starter] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-03T04:35:13.169Z  INFO 31200 --- [shopwave-starter] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-03T04:35:13.411Z  INFO 31200 --- [shopwave-starter] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@3686389']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-04-03T04:35:30.170Z  INFO 31200 --- [shopwave-starter] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-04-03T04:35:30.209Z  INFO 31200 --- [shopwave-starter] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-04-03T04:35:30.941Z  WARN 31200 --- [shopwave-starter] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-04-03T04:35:32.278Z  INFO 31200 --- [shopwave-starter] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2026-04-03T04:35:32.519Z  INFO 31200 --- [shopwave-starter] [           main] c.s.ShopwaveStarterApplicationTests      : Started ShopwaveStarterApplicationTests in 5.523 seconds (process running for 28.069)
-========================================
-Sample Data Loaded Successfully!
-========================================
-Categories: Electronics, Books, Clothing
-Products: 7 products
-========================================
+2026-04-03T04:35:16.213Z  INFO 31200 --- [shopwave-starter] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists categories cascade 
+Hibernate: drop table if exists order_items cascade 
+Hibernate: drop table if exists orders cascade 
+Hibernate: drop table if exists products cascade 
+Hibernate: create table categories (id bigint generated by default as identity, description varchar(255), name varchar(255) not null, primary key (id))
+Hibernate: create table order_items (quantity integer, unit_price numeric(38,2), id bigint generated by default as identity, order_id bigint, product_id bigint, primary key (id))
+Hibernate: create table orders (total_amount numeric(38,2), created_at timestamp(6), id bigint generated by default as identity, order_number varchar(255) not null unique, status enum ('CANCELLED','DELIVERED','PENDING','SHIPPED'), primary key (id))
+Hibernate: create table products (price numeric(10,2) not null, stock integer not null, category_id bigint, created_at timestamp(6), id bigint generated by default as identity, description varchar(255), name varchar(255) not null, primary key (id))
+Hibernate: alter table if exists order_items add constraint FKbioxgbv59vetrxe0ejfubep1w foreign key (order_id) references orders
+Hibernate: alter table if exists order_items add constraint FKocimc7dtr037rh4ls4l95nlfi foreign key (product_id) references products
+Hibernate: alter table if exists products add constraint FKog2rp4qthbtt2lfyhfo32lsw9 foreign key (category_id) references categories
+2026-04-03T04:35:16.378Z  INFO 31200 --- [shopwave-starter] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-03T04:35:17.546Z  INFO 31200 --- [shopwave-starter] [           main] c.s.repository.ProductRepositoryTest     : Started ProductRepositoryTest in 9.882 seconds (process running for 13.097)
+Hibernate: insert into categories (description,name,id) values (?,?,default)
+Hibernate: insert into products (category_id,created_at,description,name,price,stock,id) values (?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.category_id,p1_0.created_at,p1_0.description,p1_0.name,p1_0.price,p1_0.stock from products p1_0 order by p1_0.price desc fetch first ? rows only
+]]></system-out>
+    <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/data/data/com.termux/files/home/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.8/byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="testFindByNameContainingIgnoreCase" classname="com.shopwave.repository.ProductRepositoryTest" time="0.112">
+    <system-out><![CDATA[Hibernate: insert into categories (description,name,id) values (?,?,default)
+Hibernate: insert into products (category_id,created_at,description,name,price,stock,id) values (?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.category_id,p1_0.created_at,p1_0.description,p1_0.name,p1_0.price,p1_0.stock from products p1_0 where upper(p1_0.name) like upper(?) escape '\'
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByPriceLessThanEqual" classname="com.shopwave.repository.ProductRepositoryTest" time="0.038">
+    <system-out><![CDATA[Hibernate: insert into categories (description,name,id) values (?,?,default)
+Hibernate: insert into products (category_id,created_at,description,name,price,stock,id) values (?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.category_id,p1_0.created_at,p1_0.description,p1_0.name,p1_0.price,p1_0.stock from products p1_0 where p1_0.price<=?
 ]]></system-out>
   </testcase>
 </testsuite>

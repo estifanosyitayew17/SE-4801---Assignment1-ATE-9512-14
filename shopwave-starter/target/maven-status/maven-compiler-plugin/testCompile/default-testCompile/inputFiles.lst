@@ -1,1 +1,4 @@
 /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/test/java/com/shopwave/ShopwaveStarterApplicationTests.java
+/data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/test/java/com/shopwave/controller/ProductControllerTest.java
+/data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/test/java/com/shopwave/repository/ProductRepositoryTest.java
+/data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter/src/test/java/com/shopwave/service/ProductServiceTest.java

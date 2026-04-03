@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shopwave.ShopwaveStarterApplicationTests" time="6.947" tests="1" errors="0" skipped="0" failures="0" flakes="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shopwave.controller.ProductControllerTest" time="5.793" tests="8" errors="0" skipped="0" failures="0" flakes="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -44,7 +44,6 @@
     <property name="localRepository" value="/data/data/com.termux/files/home/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/data/data/com.termux/files/usr/tmp/"/>
-    <property name="com.zaxxer.hikari.pool_number" value="1"/>
     <property name="java.version" value="21.0.10"/>
     <property name="user.dir" value="/data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter"/>
     <property name="os.arch" value="aarch64"/>
@@ -61,9 +60,9 @@
     <property name="java.class.version" value="65.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[shopwave-starter] "/>
   </properties>
-  <testcase name="contextLoads" classname="com.shopwave.ShopwaveStarterApplicationTests" time="0.019">
-    <system-out><![CDATA[2026-04-03T04:35:26.928Z  INFO 31200 --- [shopwave-starter] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.shopwave.ShopwaveStarterApplicationTests]: ShopwaveStarterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-04-03T04:35:26.971Z  INFO 31200 --- [shopwave-starter] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.shopwave.ShopwaveStarterApplication for test class com.shopwave.ShopwaveStarterApplicationTests
+  <testcase name="testCreateProduct_ValidationError_Returns400" classname="com.shopwave.controller.ProductControllerTest" time="0.92">
+    <system-out><![CDATA[2026-04-03T04:35:19.942Z  INFO 31200 --- [shopwave-starter] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.shopwave.controller.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-03T04:35:20.089Z  INFO 31200 --- [shopwave-starter] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.shopwave.ShopwaveStarterApplication for test class com.shopwave.controller.ProductControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -74,35 +73,25 @@
 
  :: Spring Boot ::               (v3.5.13)
 
-2026-04-03T04:35:27.124Z  INFO 31200 --- [shopwave-starter] [           main] c.s.ShopwaveStarterApplicationTests      : Starting ShopwaveStarterApplicationTests using Java 21.0.10 with PID 31200 (started by u0_a383 in /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter)
-2026-04-03T04:35:27.125Z  INFO 31200 --- [shopwave-starter] [           main] c.s.ShopwaveStarterApplicationTests      : No active profile set, falling back to 1 default profile: "default"
-2026-04-03T04:35:29.085Z  INFO 31200 --- [shopwave-starter] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-04-03T04:35:29.160Z  INFO 31200 --- [shopwave-starter] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
-2026-04-03T04:35:29.841Z  INFO 31200 --- [shopwave-starter] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-04-03T04:35:29.883Z  INFO 31200 --- [shopwave-starter] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn8: url=jdbc:h2:mem:e6f4bb19-445d-4e13-8dee-c5239ba0fcf0 user=SA
-2026-04-03T04:35:29.889Z  INFO 31200 --- [shopwave-starter] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-04-03T04:35:29.917Z  INFO 31200 --- [shopwave-starter] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-04-03T04:35:29.926Z  INFO 31200 --- [shopwave-starter] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-04-03T04:35:29.951Z  INFO 31200 --- [shopwave-starter] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-04-03T04:35:29.958Z  INFO 31200 --- [shopwave-starter] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-04-03T04:35:30.170Z  INFO 31200 --- [shopwave-starter] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-04-03T04:35:30.209Z  INFO 31200 --- [shopwave-starter] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-04-03T04:35:30.941Z  WARN 31200 --- [shopwave-starter] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-04-03T04:35:32.278Z  INFO 31200 --- [shopwave-starter] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2026-04-03T04:35:32.519Z  INFO 31200 --- [shopwave-starter] [           main] c.s.ShopwaveStarterApplicationTests      : Started ShopwaveStarterApplicationTests in 5.523 seconds (process running for 28.069)
-========================================
-Sample Data Loaded Successfully!
-========================================
-Categories: Electronics, Books, Clothing
-Products: 7 products
-========================================
+2026-04-03T04:35:20.241Z  INFO 31200 --- [shopwave-starter] [           main] c.s.controller.ProductControllerTest     : Starting ProductControllerTest using Java 21.0.10 with PID 31200 (started by u0_a383 in /data/data/com.termux/files/home/PROJECTS/EAD/shopwave-starter/shopwave-starter)
+2026-04-03T04:35:20.241Z  INFO 31200 --- [shopwave-starter] [           main] c.s.controller.ProductControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2026-04-03T04:35:24.122Z  INFO 31200 --- [shopwave-starter] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-03T04:35:24.124Z  INFO 31200 --- [shopwave-starter] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-03T04:35:24.138Z  INFO 31200 --- [shopwave-starter] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 9 ms
+2026-04-03T04:35:24.204Z  INFO 31200 --- [shopwave-starter] [           main] c.s.controller.ProductControllerTest     : Started ProductControllerTest in 4.076 seconds (process running for 19.756)
 ]]></system-out>
   </testcase>
+  <testcase name="testUpdateStock_Returns200" classname="com.shopwave.controller.ProductControllerTest" time="0.164"/>
+  <testcase name="testCreateProduct_Returns201" classname="com.shopwave.controller.ProductControllerTest" time="0.035"/>
+  <testcase name="testGetProductById_Returns200" classname="com.shopwave.controller.ProductControllerTest" time="0.046"/>
+  <testcase name="testGetProductById_Returns404" classname="com.shopwave.controller.ProductControllerTest" time="0.045"/>
+  <testcase name="testGetAllProducts_Returns200" classname="com.shopwave.controller.ProductControllerTest" time="0.112">
+    <system-out><![CDATA[2026-04-03T04:35:25.546Z  WARN 31200 --- [shopwave-starter] [           main] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateStock_InvalidDelta_Returns400" classname="com.shopwave.controller.ProductControllerTest" time="0.022"/>
+  <testcase name="testSearchProducts_Returns200" classname="com.shopwave.controller.ProductControllerTest" time="0.056"/>
 </testsuite>

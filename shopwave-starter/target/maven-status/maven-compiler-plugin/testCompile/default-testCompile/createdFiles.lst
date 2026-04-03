@@ -1,1 +1,4 @@
+com/shopwave/repository/ProductRepositoryTest.class
+com/shopwave/controller/ProductControllerTest.class
 com/shopwave/ShopwaveStarterApplicationTests.class
+com/shopwave/service/ProductServiceTest.class
