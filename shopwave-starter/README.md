@@ -1,8 +1,8 @@
 # ShopWave Starter - Enterprise Application Development Assignment 1
 
 ## Student Information
-- **Name**: [Your Name]
-- **Student Number**: [Your Student Number]
+- **Name**: Estifanos Yitayew
+- **Student Number**: ATE/9512/14
 - **Course**: SE 4801 - Enterprise Application Development
 - **Assignment**: Assignment 1 - Java Fundamentals & Enterprise Web Applications
 - **Date**: April 2026
